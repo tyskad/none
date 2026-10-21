@@ -1,21 +1,11 @@
-# Keil
-*.axf
-*.hex
-*.bin
-*.map
-*.o
-*.d
-*.crf
-*.lst
-*.lnp
-*.uvguix.*
-/Objects/
-/Listings/
+# 先：忽略仓库根目录下所有文件夹
+/*/
+.gitignore
 
-# VSCode
-.vscode/
-*.swp
+# 然后：单独保留你需要上传的文件夹（! 代表取消忽略）
+!/car_rtos/
+!/智能小车/
 
-# OS
-Thumbs.db
-.DS_Store
+# （可选）保留文件夹内部的文件，必须额外写这一条
+!*/**
+
